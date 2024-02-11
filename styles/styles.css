@@ -23,14 +23,18 @@ header {
 	border-radius: 0%;
 	color: #fff;
 	text-align: center;
+	font-family: sans-serif;
 	padding: 20px;
 	border-top-right-radius: 60%;
 	border-top-left-radius: 60%;
+	display: inline-block;
+	width: 720px;
 }
 
 p {
 	margin: 0;
 	font-size: 13px;
+	text-align: justify;
 }
 
 hr {
@@ -41,35 +45,72 @@ hr {
 }
 
 #main_container {
-	width: 800px;
+	width: 760px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 20px;
+	height: 1550px;
+	font-size: 13.5px;
 }
 
 #left {
 	float: left;
 	background-color: rgb(18, 114, 93);
 	width: 200px;
-	min-height: auto;
 	padding: 10px;
 	font-size: 13px;
 	color: rgb(255, 255, 255);
+	height: 1200px;
 }
 
 #right {
-	padding: 30px;
+	padding: 10px;
 	width: 520px;
-	min-height: auto;
 	background-color: rgb(255, 255, 255);
 	float: left;
+	height: 1200px;
 }
 
 #footer {
 	clear: both;
-	width: 800px;
+	width: 700px;
 	height: 100px;
 	background-color: black;
 	border-bottom-right-radius: 60%;
 	border-bottom-left-radius: 60%;
+	color: white;
+	padding: 30px;
+	text-align: center;
+}
+
+#left a:link {
+	color: white;
+}
+
+#left a:visited {
+	color: rgb(199, 187, 187);
+}
+
+#left a:hoover {
+	color: blue;
+}
+
+#left a:active {
+	color: red;
+}
+
+#right a:link {
+	color: white;
+}
+
+#right a:visited {
+	color: rgb(199, 187, 187);
+}
+
+#right a:hoover {
+	color: blue;
+}
+
+#right a:active {
+	color: red;
 }
