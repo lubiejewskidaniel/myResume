@@ -44,6 +44,10 @@ hr {
 	border: 0px;
 }
 
+img {
+	border-radius: 90px;
+}
+
 #main_container {
 	width: 760px;
 	margin-left: auto;
