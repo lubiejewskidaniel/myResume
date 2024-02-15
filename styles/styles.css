@@ -27,10 +27,14 @@ header {
 	padding: 20px;
 	border-top-right-radius: 60%;
 	border-top-left-radius: 60%;
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
 	width: 720px;
 }
 
+span {
+	margin-bottom: 10px;
+}
 p {
 	margin: 0;
 	font-size: 13px;
@@ -45,6 +49,8 @@ hr {
 }
 
 img {
+	margin-left: 120px;
+	margin-bottom: -100px;
 	border-radius: 90px;
 }
 
@@ -117,4 +123,17 @@ img {
 
 #right a:active {
 	color: red;
+}
+
+.cv-download-link {
+	border-radius: 26px;
+	border: 2px solid cornflowerblue;
+	color: white;
+	text-decoration: none;
+	padding: 5px 15px;
+}
+
+.cv-download-link:hover {
+	color: cornflowerblue;
+	background-color: aliceblue;
 }
