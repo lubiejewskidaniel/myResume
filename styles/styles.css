@@ -30,6 +30,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	width: 720px;
+	box-shadow: 0 0 20px black;
 }
 
 span {
@@ -48,10 +49,15 @@ hr {
 	border: 0px;
 }
 
+li {
+	margin-bottom: 3px;
+}
+
 img {
 	margin-left: 120px;
 	margin-bottom: -100px;
 	border-radius: 90px;
+	box-shadow: 0 0 20px white;
 }
 
 #main_container {
@@ -71,6 +77,7 @@ img {
 	font-size: 13px;
 	color: rgb(255, 255, 255);
 	height: 1200px;
+	box-shadow: 0 0 20px black;
 }
 
 #right {
@@ -79,6 +86,7 @@ img {
 	background-color: aliceblue;
 	float: left;
 	height: 1200px;
+	box-shadow: 0 0 20px black;
 }
 
 #footer {
@@ -91,6 +99,7 @@ img {
 	color: white;
 	padding: 30px;
 	text-align: center;
+	box-shadow: 0 0 20px black;
 }
 
 #left a:link {
@@ -131,9 +140,21 @@ img {
 	color: white;
 	text-decoration: none;
 	padding: 5px 15px;
+	transition: background-color 0.8s, color 0.8s;
+	box-shadow: 0 0 20px white;
 }
 
 .cv-download-link:hover {
+	color: cornflowerblue;
+	background-color: aliceblue;
+}
+
+.cv-download-link:active {
+	text-decoration: underline;
+}
+
+.cv-download-link:focus {
+	outline: none;
 	color: cornflowerblue;
 	background-color: aliceblue;
 }
