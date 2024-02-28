@@ -1,7 +1,25 @@
-let count = localStorage.getItem("visitCount") || 0;
+async function getVisitsCount() {
+	try {
+		const response = await fetch(
+			"https://daniellubiejewski.com/get-visits-count"
+		);
+		if (!response.ok) {
+			throw new Error("Failed to fetch visits count");
+		}
+		const data = await response.json();
+		return data.count;
+	} catch (error) {
+		console.error(error);
+		return 0;
+	}
+}
 
-count++;
+async function updateCounter() {
+	const counterElement = document.getElementById("counter");
+	if (counterElement) {
+		const count = await getVisitsCount();
+		counterElement.textContent = count;
+	}
+}
 
-document.getElementById("counter").textContent = count;
-
-localStorage.setItem("visitCount", count);
+window.addEventListener("load", updateCounter);
