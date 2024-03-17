@@ -90,14 +90,15 @@ img {
 #footer {
 	clear: both;
 	width: 720px;
-	height: 90px;
+	height: 85px;
 	background-color: black;
-	border-bottom-right-radius: 60%;
-	border-bottom-left-radius: 60%;
+	border-bottom-right-radius: 80%;
+	border-bottom-left-radius: 80%;
 	color: white;
 	padding: 20px;
 	text-align: center;
 	box-shadow: 0 0 20px black;
+	font-size: small;
 }
 
 #left a:link {
