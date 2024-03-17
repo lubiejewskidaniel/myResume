@@ -89,13 +89,13 @@ img {
 
 #footer {
 	clear: both;
-	width: 700px;
-	height: 85px;
+	width: 720px;
+	height: 90px;
 	background-color: black;
 	border-bottom-right-radius: 60%;
 	border-bottom-left-radius: 60%;
 	color: white;
-	padding: 30px;
+	padding: 20px;
 	text-align: center;
 	box-shadow: 0 0 20px black;
 }
