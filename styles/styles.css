@@ -19,6 +19,7 @@ body {
 	color: #333;
 	background: linear-gradient(to top right, #0037eb, #5ce71c);
 	margin: 20px;
+	font-size: 1.1rem;
 }
 
 /* Main container styling */
@@ -124,7 +125,7 @@ a:hover {
 }
 
 /* Responsive styling */
-@media (max-width: 800px) {
+@media (max-width: 850px) {
 	header {
 		flex-direction: column;
 		align-items: center;
