@@ -38,8 +38,9 @@
     <link rel="manifest" href="/img/fav/site.webmanifest">
 
     <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/quiz.css">
 
-
+    <script defer src="/js/quiz.js"></script>
 </head>
 
 <body>
@@ -113,7 +114,20 @@
                 <h2>Languages</h2>
                 Polish<br>
                 English<br>
+                <br>
+                <h2>QUIZ - check yourself</h2>
+                <button id="quizToggle">Toggle Quiz</button>
 
+                <div id="quizContainer" style="display: none;">
+                    <div id="quiz"></div>
+                    <div id="quizNavigation">
+                        <button id="prevQuestion" style="display: none;">Previous</button>
+                        <button id="nextQuestion">Next</button>
+                        <button id="submitQuiz" style="display: none;">Submit</button>
+                    </div>
+                    <div id="result"></div>
+                    <button id="retryQuiz" style="display: none;">Try Again</button>
+                </div>
             </section>
 
             <section id="right">

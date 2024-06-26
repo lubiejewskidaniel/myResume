@@ -1,0 +1,28 @@
+#quizContainer {
+	margin-top: 20px;
+}
+
+.question {
+	margin-bottom: 15px;
+}
+
+#submitQuiz,
+#retryQuiz {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 10px 20px;
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+#submitQuiz:hover,
+#retryQuiz:hover {
+	background-color: #45a049;
+}
+
+#result {
+	margin-top: 20px;
+	font-weight: bold;
+}
