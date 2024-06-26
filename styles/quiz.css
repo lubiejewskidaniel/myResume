@@ -1,6 +1,7 @@
 /* Quiz styling */
 #quizContainer {
 	margin-top: 20px;
+	font-family: "Times New Roman", Times, serif;
 }
 
 .question {
