@@ -1,3 +1,4 @@
+/* Quiz styling */
 #quizContainer {
 	margin-top: 20px;
 }
@@ -6,6 +7,8 @@
 	margin-bottom: 15px;
 }
 
+#quizNavigation button,
+#quizToggle,
 #submitQuiz,
 #retryQuiz {
 	display: inline-block;
@@ -15,14 +18,25 @@
 	color: white;
 	border: none;
 	cursor: pointer;
+	transition: background-color 0.3s ease;
 }
 
+#quizNavigation button:hover,
+#quizToggle:hover,
 #submitQuiz:hover,
 #retryQuiz:hover {
 	background-color: #45a049;
 }
 
+#quizNavigation {
+	margin-top: 20px;
+}
+
 #result {
 	margin-top: 20px;
 	font-weight: bold;
+}
+
+#quizToggle {
+	margin-bottom: 20px;
 }
