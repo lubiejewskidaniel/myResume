@@ -8,12 +8,15 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', 'UA-432298302');
 
         gtag('config', 'G-7L03E3Q2CN');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Daniel Lubiejewski, Web Developer, Web Design, App Development, Harlow, Ilawa, Lubawa - Resume, CV, Web Developer Harlow, Strony Internetowe Ilawa, Programmer Harlow, Programista Ilawa, Web Dev Uk">
+    <meta name="keywords"
+        content="Daniel Lubiejewski, Resume, Web Developer, Harlow, Ilawa, Lubawa, Web Design, App Development, Programista Lubawa, Programista Ilawa, Programmer Harlow, CV, Coder, Job Hunter, Lubiejewski">
 
     <!-- Open Graph meta tags -->
     <meta property="og:title" content="Daniel Lubiejewski - Resume">
@@ -39,83 +42,92 @@
 
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/quiz.css">
-
+    <script src="/js/language.js"></script>
     <script defer src="/js/quiz.js"></script>
 </head>
 
 <body>
     <div id="main_container">
+        <!-- Language Switcher -->
+        <div id="languageSwitcher">
+            <button id="btn-en" class="lang-btn" onclick="changeLanguage('en')"
+                aria-label="Switch to English">EN</button>
+            <button id="btn-pl" class="lang-btn" onclick="changeLanguage('pl')"
+                aria-label="Switch to Polish">PL</button>
+        </div>
+
         <!-- Navigation section -->
         <header>
             <img src="/img/me1.png" alt="Daniel Lubiejewski" title="Daniel Lubiejewski" width="100" height="90">
-            <h1>
-                Daniel Lubiejewski
-            </h1>
+            <h1>Daniel Lubiejewski</h1>
             <span id="prof">Web Developer</span>
             <div>
-                <a class="cv-download-link" href="/files/CV_Daniel_Lubiejewski.pdf"
-                    title="Download CV in pdf file">Download
-                    CV</a>
+                <a class="cv-download-link" href="/files/CV_Daniel_Lubiejewski.pdf" id="download_cv"
+                    title="Download CV in pdf file">Download CV</a>
             </div>
         </header>
 
         <section id="both">
             <section id="left">
-                <h2>Personal Info</h2>
-                <h3>Email</h3>
+                <h2 id="personal_info">Personal Info</h2>
+                <h3 id="email">Email</h3>
                 <a href="mailto:lubiejewskidaniel@gmail.com" title="E-mail me">lubiejewskidaniel@gmail.com</a><br>
-                <h3>Address</h3>
+                <h3 id="address">Address</h3>
                 204 Barn Mead<br>
                 Harlow<br>
                 CM18 6SS<br>
-                <h3>Phone</h3>
+                United Kingdom<br>
+                <h3 id="phone">Phone</h3>
                 <a href="tel:00447428104153" title="Call or text me">0044 7428104153</a><br>
-                <h3>GitHub</h3>
+                <h3 id="github">GitHub</h3>
                 <a href="https://github.com/lubiejewskidaniel" target="_blank"
                     title="Check my GitHub">www.github.com/lubiejewskidaniel</a>
                 <br>
-                <h3>LinkedIn</h3>
+                <h3 id="linkedin">LinkedIn</h3>
                 <a href="https://www.linkedin.com/in/daniel-lubiejewski/" target="_blank"
                     title="Visit my LinkedIn">www.linkedin.com/in/daniel-lubiejewski</a><br>
-                <h3>Marital status</h3>
-                Married<br>
-                <h2>Hard Skills</h2>
+                <h3 id="marital_status">Marital status</h3>
+                <span id="married">Married</span><br><br>
+                <h2 id="hard_skills">Hard Skills</h2>
                 <ul>
-                    <li>C programming proficiency</li>
-                    <li>C++ programming basics</li>
-                    <li>Python programming proficiency</li>
-                    <li>JavaScript - basics</li>
-                    <li>node.js</li>
-                    <li>express.js</li>
-                    <li>HTML 5</li>
-                    <li>CSS proficiency</li>
-                    <li>Version Control Management</li>
-                    <li>Networking</li>
-                    <li>MS Office 365</li>
-                </ul>
-                <h2>Soft Skills</h2>
+                    <li id="skill1">C programming proficiency</li>
+                    <li id="skill2">C++ programming basics</li>
+                    <li id="skill3">Python programming proficiency</li>
+                    <li id="skill4">JavaScript - basics</li>
+                    <li id="skill5">node.js</li>
+                    <li id="skill6">express.js</li>
+                    <li id="skill7">HTML 5</li>
+                    <li id="skill8">CSS proficiency</li>
+                    <li id="skill9">Git and GitHub</li>
+                    <li id="skill10">Networking</li>
+                    <li id="skill11">MS Office 365</li>
+                </ul><br>
+                <h2 id="soft_skills">Soft Skills</h2>
                 <ul>
-                    <li>Agile Workflow</li>
-                    <li>Software Best Practices</li>
-                    <li>Communication</li>
-                    <li>Problem solving</li>
-                    <li>Time management</li>
-                    <li>Decision making</li>
-                    <li>Leadership</li>
-                    <li>Negotiation</li>
-                    <li>Organization</li>
-                    <li>Teamwork / Collaboration</li>
-                    <li>Creativity</li>
-                    <li>Flexibility</li>
-                    <li>Adaptability to changes</li>
-                    <li>Commitment</li>
+                    <li id="sskill1">Agile Workflow</li>
+                    <li id="sskill2">Software Best Practices</li>
+                    <li id="sskill3">Communication</li>
+                    <li id="sskill4">Problem solving</li>
+                    <li id="sskill5">Time management</li>
+                    <li id="sskill6">Decision making</li>
+                    <li id="sskill7">Leadership</li>
+                    <li id="sskill8">Negotiation</li>
+                    <li id="sskill9">Organization</li>
+                    <li id="sskill10">Teamwork / Collaboration</li>
+                    <li id="sskill11">Creativity</li>
+                    <li id="sskill12">Flexibility</li>
+                    <li id="sskill13">Adaptability to changes</li>
+                    <li id="sskill14">Commitment</li>
+
                 </ul>
 
-                <h2>Languages</h2>
-                Polish<br>
-                English<br>
+                <h2 id="languages">Languages</h2>
+                <span id="lang1">Polish</span><br>
+                <span id="lang2">English</span><br>
                 <br>
-                <h2>QUIZ - check yourself</h2>
+
+                <!--Quiz Section-->
+                <h2 id="quizHeader">QUIZ - check yourself</h2>
                 <button id="quizToggle">Toggle Quiz</button>
 
                 <div id="quizContainer" style="display: none;">
@@ -131,135 +143,107 @@
             </section>
 
             <section id="right">
-                <p> I am fervently seeking the golden key to unlock the IT doors of
-                    opportunity. My aspirations are to align my passion and dedication with a renowned
-                    company in this sector, where I can not only gain invaluable experience but also
-                    cultivate new skills, blossoming into a vital asset for the organization.
-                    My goal is not just to work for the company,
-                    but to work with the company, collaborating seamlessly while I continue my
-                    educational pursuit. Currently, I am a full-time student, and my academic
-                    commitments tether me to the campus for two days a week.
-                    My compass points toward a North Star of becoming a leading programmer in the
-                    not-so-distant future. With unwavering dedication, I am ready to embark on this
-                    journey, where every challenge becomes an opportunity, and every line of code is a
-                    brushstroke on the canvas of my ambition.</p><br>
+                <p id="intro">I am fervently seeking the golden key to unlock the IT doors of opportunity. My
+                    aspirations are to align my passion and dedication with a renowned company in this sector, where I
+                    can not only gain invaluable experience but also cultivate new skills, blossoming into a vital asset
+                    for the organization. My goal is not just to work for the company, but to work with the company,
+                    collaborating seamlessly while I continue my educational pursuit. Currently, I am a full-time
+                    student, and my academic commitments tether me to the campus for two days a week. My compass points
+                    toward a North Star of becoming a leading programmer in the not-so-distant future. With unwavering
+                    dedication, I am ready to embark on this journey, where every challenge becomes an opportunity, and
+                    every line of code is a brushstroke on the canvas of my ambition.</p><br>
                 <hr>
-
-
-                <h2>Education</h2>
-                <h3>2023-10
-                    - present</h3>
+                <h2 id="education">Education</h2>
+                <h3 id="xxx">2023-10 - present</h3>
                 <ul>
-                    <li><a href="https://www.solent.ac.uk/courses/undergraduate/computer-science-bsc/2024/bsc-hons-computer-science-4-years-with-foundation-year-2024"
-                            title="Visit my course website">BSc (Hons) Computer Science,
-                            Solent University, London</a> </li>
+                    <li><a id="ed1"
+                            href="https://www.solent.ac.uk/courses/undergraduate/computer-science-bsc/2024/bsc-hons-computer-science-4-years-with-foundation-year-2024"
+                            title="Visit my course website">BSc (Hons) Computer Science, Solent University, London</a>
+                    </li>
                 </ul>
 
-                <h3>2022-10
-                    - 2023-06</h3>
+                <h3>2022-10 - 2023-06</h3>
                 <ul>
-                    <li><a href="https://www.solent.ac.uk/courses/foundation/computing/2024/computing-foundation-year-2024"
-                            title="Visit my course website">Computing - Foundation Year,
-                            Solent University, London</a> </li>
+                    <li><a id="ed2"
+                            href="https://www.solent.ac.uk/courses/foundation/computing/2024/computing-foundation-year-2024"
+                            title="Visit my course website">Computing - Foundation Year, Solent University, London</a>
+                    </li>
                 </ul>
 
-                <h3>2006-09
-                    - 2008-06</h3>
+                <h3>2006-09 - 2008-06</h3>
                 <ul>
-                    <li><a href="https://wmzdz.pl/szkoly-w-ilawie/" title="Visit High School website">IT Technology,
-                            Systems
-                            and Networks Admin
-                            After Upper Secondary School Leaving Certificate + Certificate of
-                            Competence, Ilawa, Poland</a> </li>
+                    <li><a id="ed3" href="https://wmzdz.pl/szkoly-w-ilawie/"
+                            title="Visit High School website">ITTechnology, Systems and Networks Admin After Upper
+                            Secondary School Leaving Certificate + Certificate of Competence, Ilawa, Poland</a> </li>
                 </ul>
-                <h3>2003-09
-                    - 2007-06</h3>
+                <h3>2003-09 - 2007-06</h3>
                 <ul>
-                    <li><a href="https://zs.lubawa.pl/rekrutacja/typy-szkol/" title="Visit School website"> Math and IT,
-                            National external
-                            examination
-                            Upper Secondary Education School Leaving Certificate + Nationa
-                            External Examination (Matura), Lubawa, Poland</a></li>
+                    <li><a id="ed4" href="https://zs.lubawa.pl/rekrutacja/typy-szkol/" title="Visit School website">Math
+                            and IT, National external examination Upper Secondary Education School Leaving Certificate +
+                            National External Examination (Matura), Lubawa, Poland</a></li>
                 </ul>
                 <br>
-
                 <hr>
                 <br>
-
-                <h2>Work History</h2>
+                <h2 id="work_history">Work History</h2>
                 <br>
-                <b>2019-08
-                    - 2023-09</b><br>
+                <b>2019-08 - 2023-09</b><br>
                 Stock Controller<br>
                 <i>Culina/Great Bear, UK</i><br>
                 <ul>
-                    <li>Liaise with Management and Operational staff to ensure accuracy
-                        of received and dispatched loads and amend and rework
-                        accordingly</li>
-                    <li>Assist in the management of the pallet database</li>
-                    <li>Place and receive orders to replenish stock</li>
-                    <li>Perform regular inventory audits</li>
-                    <li> Maintain and update daily shipment records</li>
+                    <li id="task1">Liaise with Management and Operational staff to ensure accuracy of received and
+                        dispatched loads and amend and rework accordingly</li>
+                    <li id="task2">Assist in the management of the pallet database</li>
+                    <li id="task3">Place and receive orders to replenish stock</li>
+                    <li id="task4">Perform regular inventory audits</li>
+                    <li id="task5">Maintain and update daily shipment records</li>
                 </ul>
                 <br>
-                <b>2015-09
-                    - 2019-08</b><br>
+                <b>2015-09 - 2019-08</b><br>
                 Picker/Packer/MHE Operator<br>
                 <i>Culina Ambient/Great Bear, UK</i><br>
                 <ul>
-                    <li>Picking, packing, driving trucks like PPT, V10, V12</li>
-                    <li>Loading lorries</li>
-                    <li>Dispatching loads</li>
-                    <li>Completing necessary invoicing and paperwork.</li>
+                    <li id="task6">Picking, packing, driving trucks like PPT, V10, V12</li>
+                    <li id="task7">Loading lorries</li>
+                    <li id="task8">Dispatching loads</li>
+                    <li id="task9">Completing necessary invoicing and paperwork.</li>
                 </ul>
                 <br>
                 <b>2009 – 2010</b><br>
                 PBS Polska in Gdynia (Poland)
                 <i>Sales Executive for Deutsche Bank</i>
                 <ul>
-                    <li>Actively seeking out potential customers who might be interested in acquiring credit cards,
-                        both
-                        through direct outreach and by leveraging existing customer databases</li>
-                    <li>Engaging with potential customers to understand their financial needs and preferences, and
-                        effectively communicating how a credit card can address those needs</li>
-                    <li>Maintaining a deep understanding of the bank's various credit card products, including
-                        features,
-                        benefits, fees, interest rates, and rewards programs</li>
-                    <li> Conducting sales presentations or pitches to potential customers, highlighting the
-                        advantages of
-                        the bank's credit card offerings and addressing any concerns or objections they may have
-                    </li>
-                    <li>Assisting customers with the credit card application process, including collecting necessary
-                        documentation and information, and ensuring that all applications are accurately completed
-                        and
-                        submitted</li>
-                    <li>Ensuring compliance with all Dautsche Bank banking regulations and internal policies
-                        throughout the
-                        sales process, including adherence to Know Your Customer (KYC) and anti-money laundering
-                        (AML)
-                        requirements.</li>
-                    <li>Monitoring and tracking sales performance metrics, such as conversion rates, revenue
-                        generated, and
-                        customer satisfaction scores, and taking proactive steps to improve performance where
-                        necessary</li>
-                </ul>
+                    <li id="task10">Actively seeking out potential customers who might be interested in acquiring credit
+                        cards, both through direct outreach and by leveraging existing customer databases</li>
+                    <li id="task11">Engaging with potential customers to understand their financial needs and
+                        preferences, and effectively communicating how a credit card can address those needs</li>
+                    <li id="task12">Maintaining a deep understanding of the bank's various credit card products,
+                        including features, benefits, fees, interest rates, and rewards programs</li>
+                    <li id="task13">Conducting sales presentations or pitches to potential customers, highlighting the
+                        advantages of the bank's credit card offerings and addressing any concerns or objections they
+                        may have</li>
+                    <li id="task14">Assisting customers with the credit card application process, including collecting
+                        necessary documentation and information, and ensuring that all applications are accurately
+                        completed and submitted</li>
+                    <li id="task15">Ensuring compliance with all Deutsche Bank banking regulations and internal policies
+                        throughout the sales process, including adherence to Know Your Customer (KYC) and anti-money
+                        laundering (AML) requirements.</li>
+                    <li id="task16">Monitoring and tracking sales performance metrics, such as conversion rates, revenue
+                        generated, and customer satisfaction scores, and taking proactive steps to improve performance
+                        where necessary</li>
 
+                </ul>
             </section>
         </section>
         <footer id="footer">
-            <i>I agree to the processing of personal data provided in this document for realising the
-                recruitment
-                process pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item
-                1000)
-                and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the Council of
-                27 April
-                2016 on the protection of natural persons with regard to the processing of personal data and on
-                the free
-                movement of such data, and repealing Directive 95/46/EC (General Data Protection
-                Regulation). </i><br><br>
+            <i>I agree to the processing of personal data provided in this document for realising the recruitment
+                process pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item 1000)
+                and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April
+                2016 on the protection of natural persons with regard to the processing of personal data and on the free
+                movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation).
+            </i><br><br>
         </footer>
     </div>
-
 </body>
 
 </html>

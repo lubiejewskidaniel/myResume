@@ -57,6 +57,32 @@ header span {
 	color: #20b2aa;
 }
 
+/* Language switcher button styling */
+#languageSwitcher {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0; /* Add some margin for spacing */
+}
+
+.lang-btn {
+	width: 30px;
+	height: 20px;
+	background-size: cover;
+	border: none;
+	cursor: pointer;
+	margin-right: 5px;
+	font-weight: bolder;
+}
+
+#btn-en {
+	background-image: url("/img/flag/uk.png");
+}
+
+#btn-pl {
+	background-image: url("/img/flag/pl.png");
+}
+
 .cv-download-link {
 	text-decoration: none;
 	background: #eb2f0e;
