@@ -1,4 +1,15 @@
 {
+	"feedback": {
+		"score_0_59": "You can be better.",
+		"score_60_74": "Not bad.",
+		"score_75_89": "Pretty good.",
+		"score_90_100": "You are a computing master."
+	},
+	"alerts": {
+		"select_answer": "Please select an answer before proceeding.",
+		"answer_all": "Please answer all questions before submitting."
+	},
+
 	"personal_info": "Personal Info",
 	"email": "Email",
 	"address": "Address",
@@ -64,5 +75,8 @@
 	"task14": "Assisting customers with the credit card application process, including collecting necessary documentation and information, and ensuring that all applications are accurately completed and submitted",
 	"task15": "Ensuring compliance with all Deutsche Bank banking regulations and internal policies throughout the sales process, including adherence to Know Your Customer (KYC) and anti-money laundering (AML) requirements.",
 	"task16": "Monitoring and tracking sales performance metrics, such as conversion rates, revenue generated, and customer satisfaction scores, and taking proactive steps to improve performance where necessary",
-	"footer": "I agree to the processing of personal data provided in this document for realising the recruitment process pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item 1000) and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation)."
+	"footer": "I agree to the processing of personal data provided in this document for realising the recruitment process pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item 1000) and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation).",
+	"occ1": "Stock Controller",
+	"occ2": "Picker/Packer/MHE Operator",
+	"occ3": "Sales Representative for Deutsche Bank"
 }

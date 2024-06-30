@@ -1,4 +1,15 @@
 {
+	"feedback": {
+		"score_0_59": "Możesz być lepszy.",
+		"score_60_74": "Nieźle.",
+		"score_75_89": "Całkiem dobrze.",
+		"score_90_100": "Jesteś mistrzem komputerowym."
+	},
+	"alerts": {
+		"select_answer": "Proszę wybrać odpowiedź przed przejściem dalej.",
+		"answer_all": "Proszę odpowiedzieć na wszystkie pytania przed ich sprawdzeniem."
+	},
+
 	"personal_info": "Informacje osobiste",
 	"email": "Email",
 	"address": "Adres",
@@ -11,7 +22,7 @@
 	"soft_skills": "Umiejętności Miękkie",
 	"languages": "Języki",
 	"quizHeader": "QUIZ - sprawdź siebie",
-	"quizToggle": "Przełącz Quiz",
+	"quizToggle": "Rozwiń/Zwiń Quiz",
 	"education": "Edukacja",
 	"work_history": "Historia pracy",
 	"download_cv": "Pobierz CV",
@@ -64,5 +75,8 @@
 	"task14": "Pomoc klientom w procesie składania wniosków o karty kredytowe, w tym zbieranie niezbędnej dokumentacji i informacji oraz zapewnienie, że wszystkie wnioski są dokładnie wypełnione i złożone w odpowiednim miejscu i terminie",
 	"task15": "Zapewnienie zgodności z wszystkimi przepisami bankowymi Deutsche Bank oraz wewnętrznymi politykami podczas procesu sprzedaży, w tym przestrzeganie wymagań Know Your Customer (KYC) i przeciwdziałania praniu pieniędzy (AML)",
 	"task16": "Monitorowanie i śledzenie wskaźników wydajności sprzedaży, takich jak współczynniki konwersji, wygenerowane przychody i oceny zadowolenia klientów oraz podejmowanie proaktywnych działań w celu poprawy wydajności, jeśli to konieczne",
-	"footer": "Zgadzam się na przetwarzanie danych osobowych zawartych w niniejszym dokumencie w celu realizacji procesu rekrutacji zgodnie z ustawą o ochronie danych osobowych z dnia 10 maja 2018 r. (Dz.U. 2018 poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie o ochronie danych)."
+	"footer": "Zgadzam się na przetwarzanie danych osobowych zawartych w niniejszym dokumencie w celu realizacji procesu rekrutacji zgodnie z ustawą o ochronie danych osobowych z dnia 10 maja 2018 r. (Dz.U. 2018 poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie o ochronie danych).",
+	"occ1": "Kontroler Magazynu",
+	"occ2": "Komisjoner/Pakowacz/Operator Wózków i urządzeń",
+	"occ3": "Przedstawiciel Handlowy dla Deutsche Bank"
 }
