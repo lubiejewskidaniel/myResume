@@ -39,13 +39,13 @@ function setQuizLanguage(lang) {
 
 function changeLanguage(lang) {
 	loadTranslations(lang).then(() => {
-		initializeQuiz();
+		window.initializeQuiz(); // Ensure using the global reference
 	});
 }
 
 document.addEventListener("DOMContentLoaded", () => {
 	const savedLang = localStorage.getItem("language") || "en";
 	loadTranslations(savedLang).then(() => {
-		initializeQuiz();
+		window.initializeQuiz(); // Ensure using the global reference
 	});
 });

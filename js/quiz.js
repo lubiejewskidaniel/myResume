@@ -1,3 +1,4 @@
+// quiz.js
 document.addEventListener("DOMContentLoaded", function () {
 	const quizToggle = document.getElementById("quizToggle");
 	const quizContainer = document.getElementById("quizContainer");
@@ -10,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	let currentQuestionIndex = 0;
 	let userAnswers = [];
 
-	function initializeQuiz() {
+	window.initializeQuiz = function () {
 		const lang = localStorage.getItem("language") || "en";
 		if (!quizTranslations[lang]) {
 			console.error(`No quiz translations found for language: ${lang}`);
@@ -119,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			currentQuestionIndex = 0;
 			renderQuestion();
 		});
-	}
+	};
 
 	const savedLang = localStorage.getItem("language") || "en";
 	loadTranslations(savedLang)
