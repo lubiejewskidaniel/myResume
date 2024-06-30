@@ -62,7 +62,7 @@ header span {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 20px 0; /* Add some margin for spacing */
+	margin: 2px 0; /* Add some margin for spacing */
 }
 
 .lang-btn {
