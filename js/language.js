@@ -1,16 +1,23 @@
 const translations = {};
 const quizTranslations = {};
 
-function loadTranslations(lang) {
-	return Promise.all([
-		fetch(`/lang/${lang}.json`).then((response) => response.json()),
-		fetch(`/lang/${lang}_quiz.json`).then((response) => response.json()),
-	]).then(([translationsData, quizTranslationsData]) => {
+async function loadTranslations(lang) {
+	try {
+		const [translationsData, quizTranslationsData] = await Promise.all([
+			fetch(`/lang/${lang}.json`).then((response) => response.json()),
+			fetch(`/lang/${lang}_quiz.json`).then((response) => response.json()),
+		]);
 		translations[lang] = translationsData;
 		quizTranslations[lang] = quizTranslationsData;
-		setLanguage(lang);
-		setQuizLanguage(lang);
-	});
+		console.log(
+			`Translations loaded for ${lang}`,
+			translationsData,
+			quizTranslationsData
+		); // Debug
+	} catch (error) {
+		console.error(`Error loading translations for ${lang}:`, error);
+		throw error;
+	}
 }
 
 function setLanguage(lang) {
@@ -33,19 +40,39 @@ function setQuizLanguage(lang) {
 	}
 	// Update questions if quiz is already loaded
 	if (document.getElementById("quizContainer").style.display === "block") {
-		renderQuestion();
+		window.renderQuestion();
 	}
 }
 
-function changeLanguage(lang) {
-	loadTranslations(lang).then(() => {
-		window.initializeQuiz(); // Ensure using the global reference
-	});
+async function changeLanguage(lang) {
+	console.log("Changing language to:", lang); // Debug
+
+	// Zachowanie stanu widoczności quizu przed zmianą języka
+	const quizContainer = document.getElementById("quizContainer");
+	const quizVisible = quizContainer.style.display === "block";
+
+	await loadTranslations(lang);
+	console.log("Translations loaded for:", lang); // Debug
+
+	setLanguage(lang);
+	setQuizLanguage(lang);
+
+	// Przywrócenie stanu widoczności quizu po zmianie języka
+	window.initializeQuiz(); // Reinitialize quiz after language change
+	if (quizVisible) {
+		quizContainer.style.display = "block";
+		window.renderQuestion(); // Render the first question after language change
+	}
+
+	console.log("Language changed to:", lang); // Debug
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
 	const savedLang = localStorage.getItem("language") || "en";
-	loadTranslations(savedLang).then(() => {
-		window.initializeQuiz(); // Ensure using the global reference
-	});
+	console.log("Loaded language on DOMContentLoaded:", savedLang); // Debug
+	await loadTranslations(savedLang);
+	setLanguage(savedLang);
+	setQuizLanguage(savedLang);
+	window.initializeQuiz(); // Ensure using the global reference
+	console.log("Quiz initialized on DOMContentLoaded"); // Debug
 });

@@ -78,7 +78,8 @@
 		},
 		{
 			"question": "10. Jakie rozszerzenie pliku jest używane dla dokumentu Microsoft Excel?",
-			"choices": [".xlsx", ".docx", ".pptx", ".excel"]
+			"choices": [".xlsx", ".docx", ".pptx", ".excel"],
+			"answer": 0
 		},
 		{
 			"question": "11. Jaki jest skrót do kopiowania tekstu w większości programów?",
