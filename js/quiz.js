@@ -67,6 +67,22 @@ document.addEventListener("DOMContentLoaded", function () {
 		}); // Debug
 	};
 
+	function checkIfAllAnswered() {
+		return userAnswers.every((answer) => answer !== null);
+	}
+
+	function calculateScore() {
+		const lang = localStorage.getItem("language") || "en";
+		const questions = quizTranslations[lang]?.questions || [];
+		let score = 0;
+		questions.forEach((q, index) => {
+			if (userAnswers[index] === q.answer) {
+				score++;
+			}
+		});
+		return (score / questions.length) * 100;
+	}
+
 	nextQuestion.addEventListener("click", function () {
 		const selected = document.querySelector(
 			`input[name="q${currentQuestionIndex}"]:checked`
