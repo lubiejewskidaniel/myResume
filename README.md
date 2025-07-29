@@ -5,7 +5,7 @@ This project is more than just a CV. It’s a demonstration of my web developmen
 
 ## 🌐 Live Preview: [View my CV](https://daniellubiejewski.com)  
 
----
+
 
 ## 📌 Table of Contents
 
