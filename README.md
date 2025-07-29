@@ -42,8 +42,8 @@ As an aspiring developer currently completing my **BSc in Computing**, I wanted 
 |----------------|------------------------------------------|
 | **HTML5**      | Semantic structure                       |
 | **CSS3**       | Custom styling & layout                  |
-| **JavaScript** | Some operations (eg. quiz)  |
-| **GitHub Pages** | VPN Fasthosts                  |
+| **JavaScript** | Some operations (eg. quiz)               |
+| **GitHub Pages** | VPS Infinity free                      |
 
 ---
 
