@@ -7,6 +7,19 @@ This project is more than just a CV. It’s a demonstration of my web developmen
 
 ---
 
+## 📌 Table of Contents
+
+- [Why This Project](#-why-this-project)
+- [Key Features](#-key-features)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Goals Behind This Project](#-goals-behind-this-project)
+- [Next Steps / Improvements](#-next-steps--improvements)
+- [Let’s Work Together](#-lets-work-together)
+- [Contact Me](#-contact-me)
+
+---
+
 ## 💡 Why This Project?
 
 As an aspiring developer currently completing my **BSc in Computing**, I wanted to create a space that not only shares who I am but also **shows what I can do**. This resume site is built from scratch — no templates, no frameworks — to reflect the level of care I bring to every project.
