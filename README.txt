@@ -4,7 +4,7 @@
 Welcome to my personal, interactive resume — built entirely with **HTML**, **CSS**, and a touch of **JavaScript**.  
 This project is more than just a CV. It’s a demonstration of my web development skills, design sense, and ability to deliver fast, clean, and responsive digital content.
 
-🌐 **Live Preview:** [Click here to view my resume](https://lubiejewskidaniel.github.io/myResume/)
+🌐 **Live Preview:** [Click here to view my resume](https://lubiejewskidaniel.com)
 
 ---
 
@@ -82,7 +82,6 @@ If you're hiring, collaborating, or just curious — let’s connect!
 
 📧 **LubiejewskiDaniel@gmail.com**  
 🔗 [GitHub Profile](https://github.com/lubiejewskidaniel)  
-🔗 [LinkedIn](#) *(Add your LinkedIn link here)*
 
 ---
 
