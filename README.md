@@ -42,7 +42,7 @@ As an aspiring developer currently completing my **BSc in Computing**, I wanted 
 |----------------|------------------------------------------|
 | **HTML5**      | Semantic structure                       |
 | **CSS3**       | Custom styling & layout                  |
-| **JavaScript** | (Optional enhancements – smooth scroll)  |
+| **JavaScript** | Some operations (eg. quiz)  |
 | **GitHub Pages** | Hosting & deployment                   |
 
 ---
