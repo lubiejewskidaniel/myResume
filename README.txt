@@ -1,10 +1,9 @@
-
 # 📄 My Online Resume
 
 Welcome to my personal, interactive resume — built entirely with **HTML**, **CSS**, and a touch of **JavaScript**.  
 This project is more than just a CV. It’s a demonstration of my web development skills, design sense, and ability to deliver fast, clean, and responsive digital content.
 
-🌐 **Live Preview:** [Click here to view my resume](https://lubiejewskidaniel.com)
+🌐 **Live Preview:** [Click here to view my resume](https://www.lubiejewskidaniel.com)
 
 ---
 
