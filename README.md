@@ -51,10 +51,38 @@ As an aspiring developer currently completing my **BSc in Computing**, I wanted 
 
 ```bash
 myResume/
-├── index.html           # Main resume page
-├── style.css            # CSS styling
-├── assets/              # Icons, images, or PDF resume (optional)
-└── README.md            # Project documentation (you’re here!)
+├── index.html                   # Main resume page
+├── README.md                    # Project documentation
+├── files/                       # Downloadable files
+│   └── CV_Daniel_Lubiejewski.pdf   # PDF version of resume
+├── img/                         # Images and icons
+│   ├── me1.png                  # Profile photo
+│   ├── mini.jpg                 # Supporting image
+│   ├── flag/                    # Language icons
+│   │   ├── pl.png               # Polish flag
+│   │   └── uk.png               # UK flag
+│   └── fav/                     # Favicon assets
+│       ├── favicon.ico
+│       ├── favicon-16x16.png
+│       ├── favicon-32x32.png
+│       ├── apple-touch-icon.png
+│       ├── android-chrome-192x192.png
+│       ├── android-chrome-512x512.png
+│       ├── site.webmanifest
+│       └── README.md           # Favicon source info
+├── js/                          # JavaScript functionality
+│   ├── language.js              # Handles language toggle
+│   ├── quiz.js                  # Quiz logic
+│   ├── en_quiz.js               # English quiz content
+│   ├── pl_quiz.js               # Polish quiz content
+├── lang/                        # Language data
+│   ├── en.json                  # English UI text
+│   ├── pl.json                  # Polish UI text
+│   ├── en_quiz.json             # English quiz questions
+│   └── pl_quiz.json             # Polish quiz questions
+├── styles/                      # CSS styles
+│   ├── styles.css               # Main styling
+│   └── quiz.css                 # Quiz-specific styling
 ```
 
 ---
