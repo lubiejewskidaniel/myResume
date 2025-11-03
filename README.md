@@ -100,6 +100,7 @@ myResume/
 
 - 📄 Add downloadable PDF version of resume - now will work on
 - 🌗 Add dark mode toggle - done :)
+- 🎮 Add small IT knowledge Quiz - done :)
 - 🎞️ Smooth scroll and subtle animations - done :)
 - 📧 Integrate contact form or email link
 - 💡 Switch to React or another framework for version 2
